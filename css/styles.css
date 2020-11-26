@@ -8,8 +8,14 @@ body{
     font-family: 'Poppins' , sans-serif;
     width: 100%;
     height: 100%;
+    position: relative;
+    background-color: black;
+    /* overflow: hidden; */
 }
-
+p{
+    color: white;
+    font-size: 1.6rem;
+}
 a{
     text-decoration: none;
 }
@@ -24,8 +30,8 @@ header{
     height: 8vh;
     transform: translateX(-50%);
     background-color: transparent;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top:0;
     left: 50%;
     margin: 0 auto;
     display: flex;
@@ -62,10 +68,11 @@ header nav ul li a:hover{
 header nav ul li i{
     font-size: 1.1rem;
 }
-section .vid{
+.vid{
     position: relative;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .vid-container{
   position: relative;
@@ -86,12 +93,12 @@ section .vid{
 }
 .overlay-vid{
     position: absolute;
-    top: 0;
+     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .vid-content{
     color: white;
@@ -110,6 +117,7 @@ section .vid{
 }
 .vid-content h4{
     font-size: 2rem;
+    font-weight: 400;
 }
 .not{
     color: red;
@@ -128,8 +136,94 @@ section .vid{
     background-color: red;
 }
 
-.sec{
+.pricing{
+    display: flex;
+    /* justify-content: space-eve; */
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 700px;
-    background-color: black;
+    max-width: 1400px;
+    padding: 2.5rem;
+    margin: 0 auto;
+}
+.pricing-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+}
+
+.section-title {
+    width: 100%;
+    padding: 2.5rem;
+    margin: 0 0 4.5rem;
+    text-align: center;
+}
+.section-title span{
+    color: red;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.section-title h2{
+    font-size: 2.5rem;
+    line-height: 10px;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+.price-item{
+    border: 1px solid #c4c4c4 ;
+    padding: 2.5rem;
+    text-align: center;
+    transition: 0.7s all ease-in-out;
+}
+.price-item:hover{
+    background-color: white;
+}
+.price-item:hover.price-item h3{
+    color: black;
+}
+.price-item:hover .pi-price span{
+    color: black;
+}
+.price-item.second{
+    margin-top: -4rem;
+}
+.price-item h3{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.pi-price{
+    margin-bottom: 2rem;
+} 
+.pi-price h2{
+    font-size: 3rem;
+    color: red;
+}
+.pi-price span{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: -1rem;
+    color: white;
+}
+.price-item ul{
+    margin-bottom: 3rem;
+}
+.price-item ul li{
+    margin-bottom: 0.5rem;
+    color: #c4c4c4;
+    font-size: 1rem;
+}
+.pricing-btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+
 }
