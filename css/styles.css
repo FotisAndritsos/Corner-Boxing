@@ -243,8 +243,8 @@ header nav ul li a:hover{
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    padding: 2.5rem 0;
-    margin: 0 auto;
+    padding: 2.5rem 0 3.5rem;
+    margin: 0 auto 3rem;
 }
 .about-container{
     display: flex;
@@ -288,7 +288,7 @@ header nav ul li a:hover{
 .about-info{
     flex: 1;
     padding: 2.5rem;
-    text-align: left;
+    text-align: center;
 }
 .about-info h3{
     color: red;
@@ -299,10 +299,42 @@ header nav ul li a:hover{
     letter-spacing: 0.5px;
 
 }
+.about-info span{
+    color: white;
+}
 .about-info p{
     font-size: 1.1rem;
     line-height: 1.8rem;
-    width: 80%;
     color: #c4c4c4;
     margin-bottom: 2.5rem;
+}
+
+/* PARALLAX */
+.parallax {
+  background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
+  min-height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.parallax h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.grad.up{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6153370717938027) 50%, rgba(0,0,0,1) 100%);
+
 }
