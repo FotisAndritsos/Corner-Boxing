@@ -40,13 +40,13 @@ header{
     align-items: center;
     z-index: 100;
 }
-header .logo{
+.logo{
     font-size: 1.6rem;
     color: white;
     font-weight: 700;
 
 }
-header .logo span{
+.logo span{
     color: red;
     font-size: 2rem;
     margin-right: 0.5rem;
@@ -150,8 +150,8 @@ header nav ul li a:hover{
     align-items: center;
     width: 100%;
     max-width: 1400px;
-    padding: 2.5rem;
-    margin: 0 auto;
+    padding: 2.5rem ;
+    margin: 0 auto 3rem;
 }
 .pricing-container{
     width: 100%;
@@ -197,7 +197,7 @@ header nav ul li a:hover{
 .price-item:hover .pi-price span{
     color: black;
 }
-.price-item.second{
+.price-item.middle{
     margin-top: -4rem;
 }
 .price-item h3{
@@ -311,8 +311,7 @@ header nav ul li a:hover{
 
 /* PARALLAX */
 .parallax {
-  background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
-  min-height: 600px; 
+  min-height: 400px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -322,11 +321,28 @@ header nav ul li a:hover{
   justify-content: center;
   flex-direction: column;
   position: relative;
+  z-index: 1;
 }
-.parallax h3{
-    font-size: 3rem;
-    margin-bottom: 2rem;
+.first{  
+    background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
+}
+.second{  
+    background-image: url("/images-vid/attentie-attentie-ig7vN6OkGNE-unsplash.jpg");
+}
+.parallax h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
     color: white;
+}
+.overlay-par{
+    position: absolute;
+     top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
 }
 .grad.up{
     position: absolute;
@@ -336,5 +352,46 @@ header nav ul li a:hover{
     height: 2rem;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6153370717938027) 50%, rgba(0,0,0,1) 100%);
+}
 
+/* FOOTER  */
+
+footer{
+    width: 100%;
+    max-width: 1400px;
+    padding: 3.5rem 2.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.footer-logo,.footer-contact,.footer-member,.footer-social{
+    flex: 1;
+}
+.footer-logo p{
+    font-size: 1.1rem;
+    color: #c4c4c4;
+    margin-top: 1rem;
+}
+.footer-contact,.footer-member,.footer-social{
+    text-align: center;
+}
+.footer-contact a,.footer-member a,.footer-social a{
+    color:white;
+    font-size:1rem ;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    transition: 0.3s all ease;
+}
+.footer-contact a:hover,.footer-member a:hover,.footer-social a:hover{
+    color:red;
+}
+.footer-contact li,.footer-member li,.footer-social li{
+    margin-bottom: 0.2rem;
+}
+.footer-contact h4,.footer-member h4,.footer-social h4{
+    color:white;
+    font-size:1.2rem ;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
 }
