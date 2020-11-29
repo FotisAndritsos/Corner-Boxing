@@ -15,7 +15,6 @@ body{
 }
 p{
     color: white;
-    font-size: 1.6rem;
 }
 a{
     text-decoration: none;
@@ -201,7 +200,7 @@ header nav ul li a:hover{
     margin-top: -4rem;
 }
 .price-item h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -324,15 +323,27 @@ header nav ul li a:hover{
   z-index: 1;
 }
 .first{  
-    background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
+    background-image: url("/images-vid/attentie-attentie-ig7vN6OkGNE-unsplash.jpg");
 }
 .second{  
-    background-image: url("/images-vid/attentie-attentie-ig7vN6OkGNE-unsplash.jpg");
+    background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
 }
 .parallax h2{
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: white;
+}
+.sign{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign input{
+    width: 20%;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
 }
 .overlay-par{
     position: absolute;
@@ -394,4 +405,94 @@ footer{
     font-size:1.2rem ;
     font-weight: 600;
     margin-bottom: 0.7rem;
+}
+/* TEAM  */
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 2.5rem ;
+    margin: 0 auto ;
+}
+.team-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+}
+.team-item{
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s all ease-in-out;
+}
+.team-item:hover .team-overlay{
+    opacity: 1;
+}
+.team-item:hover .team-social a{
+    transform: scale(1);
+}
+.team-img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-overlay,.team-social{
+    position: absolute;
+}
+.team-overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+.team-social{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.team-social i{
+    font-size: 1.3rem;
+}
+.team-social a{
+    color: #c4c4c4;
+    display: inline-block;
+    padding: 0.6rem;
+    border: 1px solid #c4c4c4;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 1s all ease;
+}
+.team-social a:hover{
+    color: red;
+    border: 1px solid red;
+}
+.team-info{
+    padding: 1rem;
+}
+.team-info h3{
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.team-info p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: red;
 }
