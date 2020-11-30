@@ -450,10 +450,10 @@ header nav ul li a:hover{
   z-index: 1;
 }
 .first{  
-    background-image: url("images-vid/attentie-attentie-ig7vN6OkGNE-unsplash.jpg");
+    background-image: url("/images-vid/attentie-attentie-ig7vN6OkGNE-unsplash.jpg");
 }
 .second{  
-    background-image: url("images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
+    background-image: url("/images-vid/matthew-payne-4tHbsNGFp18-unsplash.jpg");
 }
 .parallax h2{
     font-size: 3.5rem;
