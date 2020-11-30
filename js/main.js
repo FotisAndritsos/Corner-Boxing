@@ -56,7 +56,6 @@ gsap.from(".price-item.middle", {
       start:"top center",
       toggleActions:"restart pause reverse pause",
       scrub:1,
-      markers:true
     },
     duration: 1, 
     y:60, 
@@ -68,7 +67,6 @@ gsap.from(".price-item.akri", {
       start:"top center",
       toggleActions:"restart pause reverse pause",
       scrub:1,
-      markers:true
     },
     duration: 1, 
     y:-60, 
