@@ -44,7 +44,7 @@ header{
     color: white;
     font-weight: 700;
 }
-.logo span{
+.corn{
     color: red;
     font-size: 2rem;
     margin-right: 0.5rem;
@@ -384,6 +384,7 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: stretch;
     height: 600px;
+    overflow: hidden;
 }
 .img-1{
     flex: 1;
