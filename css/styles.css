@@ -38,6 +38,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    overflow: hidden;
 }
 .logo{
     font-size: 1.6rem;
@@ -509,6 +510,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    margin: auto;
 }
 
 .footer-logo,.footer-contact,.footer-member,.footer-social{

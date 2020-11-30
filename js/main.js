@@ -15,8 +15,14 @@ closeMenu.addEventListener('click',()=>{
 })
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".corn", {duration:6, translateX:"-400%",display:"inline-block",ease:"elastic"});
-gsap.from(".linei-t", {duration:3, scale:"0",display:"inline-block"});
+
+var tl = gsap.timeline();
+
+tl.from(".linei-t", {duration:2, scale:"0",display:"inline-block"})
+tl.from(".not", {duration:3, y:-300 , ease:"bounce",display:"inline-block"})
+tl.from(".corn", {duration:4, x:-200,ease:"elastic",display:"inline-block"})
+
+
 
 gsap.utils.toArray(".section-title").forEach(title => {
   var tl = gsap.timeline({
@@ -43,4 +49,28 @@ gsap.from(".img-1", {
     duration: 4, 
     translateX:"-100%", 
     ease:"bounce"
+});
+gsap.from(".price-item.middle", {
+    scrollTrigger: {
+      trigger:".price-item.middle",
+      start:"top center",
+      toggleActions:"restart pause reverse pause",
+      scrub:1,
+      markers:true
+    },
+    duration: 1, 
+    y:60, 
+    ease:"power2"
+});
+gsap.from(".price-item.akri", {
+    scrollTrigger: {
+      trigger:".price-item.akri",
+      start:"top center",
+      toggleActions:"restart pause reverse pause",
+      scrub:1,
+      markers:true
+    },
+    duration: 1, 
+    y:-60, 
+    ease:"power2"
 });
