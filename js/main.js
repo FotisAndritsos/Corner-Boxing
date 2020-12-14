@@ -72,3 +72,6 @@ gsap.from(".price-item.akri", {
     y:-60, 
     ease:"power2"
 });
+const fotis =()=>{
+
+}
